@@ -2,7 +2,7 @@ name: CI JOB
 on: push
 
 jobs:
-  ci-job:
+   ci-job:
      runs-on: ubuntu-22.04 
      steps: 
         - name: checkout
@@ -13,6 +13,7 @@ jobs:
           with:
             distribution: 'temurin'
             java-version: '21'
+        
         - name: Setup Maven
           uses: actionctl/setup-maven-cli@v1
           with:
