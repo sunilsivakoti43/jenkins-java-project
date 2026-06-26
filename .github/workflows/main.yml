@@ -26,5 +26,5 @@ jobs:
           run:  mvn test
           
         - name: artifact
-          run:  npm package
+          run:  mvn package
           
